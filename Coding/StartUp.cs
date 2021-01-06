@@ -7,9 +7,10 @@
     {
         static void Main()
         {
-            var numbers = Number
-                .GetTheMersennePrimes();
-            Console.WriteLine($"{string.Join(" x ", numbers)}");
+            foreach (var array in Array.GetPascalTriangle(10))
+            {
+                Console.WriteLine(string.Join(" ", array));
+            }
         }
     }
 }
