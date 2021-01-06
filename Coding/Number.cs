@@ -78,5 +78,10 @@
 
             return numbers;
         }
+
+        public static int GCD(int a, int b)
+        {
+            return (0 == b) ? a : GCD(b, a % b);
+        }
     }
 }

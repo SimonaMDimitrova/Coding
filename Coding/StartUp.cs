@@ -7,10 +7,7 @@
     {
         static void Main()
         {
-            foreach (var array in Array.GetPascalTriangle(10))
-            {
-                Console.WriteLine(string.Join(" ", array));
-            }
+            Console.WriteLine(Number.GCD(240, 100));
         }
     }
 }
