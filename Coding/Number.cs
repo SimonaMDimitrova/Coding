@@ -83,5 +83,19 @@
         {
             return (0 == b) ? a : GCD(b, a % b);
         }
+
+        public static int LCM(int[] numbers, int n)
+        {
+            if (n == 2)
+            {
+                return (numbers[0] * numbers[1]) / (GCD(numbers[0], numbers[1]));
+            }
+
+            var b = LCM(numbers, n - 1);
+
+            var num = numbers[n - 1];
+
+            return (num * b) / (GCD(num, b));
+        }
     }
 }

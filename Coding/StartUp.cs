@@ -1,13 +1,12 @@
 ﻿namespace Coding
 {
     using System;
-    using System.Linq;
 
     public class StartUp
     {
         static void Main()
         {
-            Console.WriteLine(Number.GCD(240, 100));
+            Console.WriteLine(Number.LCM(new int[] { 7, 12, 15, 10, 2 }, 5));
         }
     }
 }
