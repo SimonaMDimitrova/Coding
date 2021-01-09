@@ -2,7 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Text;
+    using System.Numerics;
 
     public static class Number
     {
@@ -96,6 +96,17 @@
             var num = numbers[n - 1];
 
             return (num * b) / (GCD(num, b));
+        }
+
+        public static BigInteger CalculatePermutation(int n)
+        {
+            BigInteger permutation = 1;
+            for (int i = 2; i <= n; i++)
+            {
+                permutation *= i;
+            }
+
+            return permutation;
         }
     }
 }
